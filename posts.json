@@ -1,0 +1,63 @@
+[
+  {
+    "id": "welcome",
+    "title": "Welcome to My Blog",
+    "date": "2025-09-30",
+    "author": "Nadeem",
+    "tags": ["intro","personal"],
+    "excerpt": "A short welcome message and what to expect on this blog.",
+    "content": "<p>Welcome! This blog is a simple, responsive template built with HTML, CSS and JavaScript. Posts are stored in a local JSON file.</p><p>Write, publish, and share.</p>",
+    "cover": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+  },
+  {
+    "id": "responsive-design-tips",
+    "title": "5 Quick Responsive Design Tips",
+    "date": "2025-09-25",
+    "author": "Nadeem",
+    "tags": ["design","css","tips"],
+    "excerpt": "Practical tips to make your websites responsive quickly.",
+    "content": "<h2>Tip 1 — Mobile-first</h2><p>Design for the smallest screens first, then scale up.</p><h2>Tip 2 — Fluid Grids</h2><p>Use percentage-based widths instead of fixed units.</p><h2>Tip 3 — Flexible Images</h2><p>Ensure media scales with max-width:100%.</p><h2>Tip 4 — Breakpoints</h2><p>Pick breakpoints based on content, not devices.</p><h2>Tip 5 — Test Often</h2><p>Check your site on multiple devices.</p>",
+    "cover": "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+  },
+  {
+    "id": "html-css-best-practices",
+    "title": "HTML & CSS Best Practices for Beginners",
+    "date": "2025-09-20",
+    "author": "Nadeem",
+    "tags": ["html","css","best-practices"],
+    "excerpt": "Simple habits to make your code clean, reusable, and professional.",
+    "content": "<ul><li>Use semantic HTML tags (header, main, footer, article).</li><li>Keep CSS modular and avoid inline styles.</li><li>Comment sections of your code for readability.</li><li>Organize CSS with variables for colors, spacing, and typography.</li><li>Validate your HTML/CSS with tools like W3C validator.</li></ul>",
+    "cover": "https://images.unsplash.com/photo-1505685296765-3a2736de412f"
+  },
+  {
+  "id": "javascript-basics",
+  "title": "JavaScript Basics Every Developer Should Know",
+  "date": "2025-09-15",
+  "author": "Nadeem",
+  "tags": ["javascript","basics","webdev"],
+  "excerpt": "Understanding variables, functions, and DOM manipulation.",
+  "content": "<h2>1. Variables</h2><p>Learn let, const, and var — and know when to use them.</p><h2>2. Functions</h2><p>Functions are reusable blocks of code that perform tasks.</p><h2>3. DOM</h2><p>Use document.querySelector to grab elements and update them dynamically.</p><h2>4. Events</h2><p>Attach click, input, or custom events to make pages interactive.</p><h2>5. Arrays & Objects</h2><p>They’re the core of working with data in JS.</p>",
+  "cover": "https://picsum.photos/seed/javascript-basics-2025/1200/800"
+}
+,
+  {
+    "id": "blogging-tips",
+    "title": "Blogging Tips for Developers",
+    "date": "2025-09-10",
+    "author": "Nadeem",
+    "tags": ["blogging","writing","personal"],
+    "excerpt": "Want to start blogging about code and projects? Here are tips to help you.",
+    "content": "<p>1. Write in simple language — make your posts easy to follow.</p><p>2. Add code snippets to explain concepts.</p><p>3. Use screenshots or diagrams for visual learners.</p><p>4. Share your learning journey, not just finished work.</p><p>5. Be consistent with posting schedule.</p>",
+    "cover": "https://images.unsplash.com/photo-1504711434969-e33886168f5c"
+  },
+  {
+    "id": "blog-template-guide",
+    "title": "How This Blog Template Works",
+    "date": "2025-09-05",
+    "author": "Nadeem",
+    "tags": ["template","guide","json"],
+    "excerpt": "Behind the scenes: posts are rendered dynamically from JSON using HTML, CSS, and JavaScript.",
+    "content": "<p>This template is built with:</p><ul><li><strong>HTML</strong> for structure</li><li><strong>CSS</strong> for responsive styling</li><li><strong>JavaScript</strong> for loading JSON posts</li></ul><p>Advantages:</p><ul><li>No need for a heavy CMS like WordPress</li><li>Easy to customize</li><li>Lightweight and fast</li></ul>",
+    "cover": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853"
+  }
+]

@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Personal Blog — Nadeem</title>
+  <meta name="description" content="A clean, responsive personal blog template built with HTML, CSS and JavaScript." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header/Navbar -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#/" class="brand">Nadeem's Blog</a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <button id="menu-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#/">Home</a></li>
+          <li><a href="#/about">About</a></li>
+          <li><button id="info-toggle" class="info-btn">ℹ Info</button></li>
+        </ul>
+      </nav>
+    </div>
+</header>
+
+
+  <!-- Slidebar (below navbar, slide-down) -->
+  <aside id="slidebar" class="slidebar" hidden>
+    <div class="slidebar-inner container">
+      <button id="close-slidebar" class="close-btn">×</button>
+      <h2>Quick Info</h2>
+      <p>Welcome to <strong>Nadeem’s Blog</strong> 🎉</p>
+      <ul>
+        <li>📌 Clean & responsive design</li>
+        <li>📌 Posts from JSON</li>
+        <li>📌 Lightweight & fast</li>
+      </ul>
+      <p>
+        Follow me on  
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a> •  
+        <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <h1 class="hero-title">Clean, responsive blog template</h1>
+      <p class="hero-sub">Posts are rendered dynamically from local JSON — lightweight CMS for writers.</p>
+
+      <div class="controls">
+        <input id="search" type="search" placeholder="Search posts..." aria-label="Search posts" />
+        <select id="tag-filter" aria-label="Filter by tag">
+          <option value="">All tags</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Posts list -->
+    <section id="posts" class="posts-grid" aria-live="polite">
+      <!-- JS will render posts here -->
+    </section>
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="sidebar">
+      <div class="about-card">
+        <h3>About</h3>
+        <p>Hi, I’m <strong>Nadeem</strong> — a web developer and blogger.  
+        I write about coding, design, and personal growth.  
+        Follow along as I share tips, tutorials, and experiences in web development.</p>
+        <p>
+          <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a> • 
+          <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a> • 
+          <a href="mailto:example@email.com">Email</a>
+        </p>
+      </div>
+      <div class="popular-card">
+        <h3>Tags</h3>
+        <div id="tag-list" class="tag-list"></div>
+      </div>
+    </aside>
+
+    <!-- Single post view -->
+    <article id="single-post" class="single-post" hidden>
+      <a href="#/" class="back-home">← Back</a>
+      <header id="single-header"></header>
+      <section id="single-content"></section>
+    </article>
+
+    <!-- About page -->
+    <section id="about-page" class="about-page" hidden>
+      <h2>About Me</h2>
+      <p>Hello! I’m <strong>Nadeem</strong>, a web developer passionate about building clean, responsive websites and sharing knowledge with others.  
+      This blog is my space to write about coding tutorials, best practices, and personal experiences in tech.</p>
+      <p>When I’m not coding, I enjoy reading, exploring new tools, and learning design skills.</p>
+      <h3>Connect with me</h3>
+      <ul>
+        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="mailto:example@email.com">Email</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Nadeem. Built with ❤️ and plain JS.</p>
+    </div>
+  </footer>
+
+  <!-- Slidebar Script -->
+  <script>
+    const slidebar = document.getElementById("slidebar");
+    const infoBtn = document.getElementById("info-toggle");
+    const closeBtn = document.getElementById("close-slidebar");
+
+    infoBtn.addEventListener("click", () => {
+      slidebar.hidden = false;
+      requestAnimationFrame(() => slidebar.classList.add("open"));
+    });
+
+    closeBtn.addEventListener("click", () => {
+      slidebar.classList.remove("open");
+      setTimeout(() => (slidebar.hidden = true), 300);
+    });
+  </script>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>
